@@ -10,7 +10,7 @@ let copyButtonTwo = document.getElementById("copy2");
 function randomCharacter(){
     let newPassword = ""
     for (let i = 0; i< 15 ; i++){
-        let index = Math.round((Math.random() * characters.length));
+        let index = Math.floor((Math.random() * characters.length));
         newPassword += characters[index];
     }
     return newPassword;
